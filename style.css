@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color:  hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.main-content {
+  width: 400px;
+  height: 50vh;
+}
+  
+  
+.rating-state {
+  width: 400px;
+  height: 400px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.thank-you-state {
+  width: 400px;
+  height: 400px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  padding: 20px;
+  display: none;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.thank-you-state.active,
+.rating-state.active {
+  display: flex;
+}
+
+.star-icon-container {
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 50%;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.main-heading {
+  margin-top: 30px;
+}
+
+.main-paragraph {
+color: hsl(217, 12%, 63%);
+}
+
+.rating-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.rating-button {
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 50%;
+  padding: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-button:hover,
+.rating-button.active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.submit-button {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 32px;
+}
+
+.submit-button:hover,
+.submit-button:active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%); 
+}
+
+
+/* Thank you state */
+
+.rating-result-container {
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 20px;
+  padding: 10px;
+  color: hsl(25, 97%, 53%);
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.rating-result {
+  font-size: 18px;
+}
+
+.thank-you-description {
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+  font-size: 18px;
+}

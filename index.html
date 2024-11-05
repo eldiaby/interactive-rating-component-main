@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+
+    <!-- Rating state start -->
+    <main class="main-content">
+      <div class="rating-state active">
+        <span class="star-icon-container">
+          <img src="images/icon-star.svg" alt="star-icon" title="star-icon">
+        </span>
+
+
+        <h1 class="main-heading">How did we do?</h1>
+
+        <p class="main-paragraph">Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+
+        <div class="rating-buttons">
+          <span class="rating-button" data-rating="1">1</span>
+          <span class="rating-button" data-rating="2">2</span>
+          <span class="rating-button" data-rating="3">3</span>
+          <span class="rating-button" data-rating="4">4</span>
+          <span class="rating-button" data-rating="5">5</span>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="thank-you-state">
+        <img src="images/illustration-thank-you.svg" alt="thank-you-illustration" title="thank-you-illustration">
+        <div class="rating-result-container">
+          You selected <!-- Add rating here --> <span class="rating-result"></span> out of 5
+        </div>
+
+        <h2 class="thank-you-heading">Thank you!</h2>
+
+        <p class="thank-you-description"> We appreciate you taking the time to give a rating. If you ever need more
+          support,
+          don’t hesitate to get in touch!
+        </p>
+        <!-- Thank you state end -->
+      </div>
+
+
+      <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>. -->
+      </div>
+    </main>
+
+  </body>
+
+</html>
